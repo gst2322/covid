@@ -1,10 +1,18 @@
+<div style="overflow-y: scroll;">
+
 <div style="display: block;">
   <canvas baseChart 
+
+  height="40vh" width="80vw"
     [datasets]="barChartData"
     [labels]="barChartLabels"
     [options]="barChartOptions"
     [plugins]="barChartPlugins"
     [legend]="barChartLegend"
     [chartType]="barChartType">
+
   </canvas>
+</div>
+<p style="text-align: center;font-family: roboto;">Confirmed cases and recovery graph from last 15days in India.</p>
+
 </div>

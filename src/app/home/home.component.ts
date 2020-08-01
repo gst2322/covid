@@ -12,6 +12,7 @@ import { QuoteService } from './quote.service';
 })
 export class HomeComponent implements OnInit {
   covidData: any;
+  term:any;
   nnn=['2','3','4','5']
   quote: string | undefined;
   isLoading = false;

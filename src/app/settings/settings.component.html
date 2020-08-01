@@ -1,25 +1,32 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title><span translate>Settings</span></ion-title>
+<div style="overflow-y: scroll;">
+  <div>
+    <p>This web applications gives information about covid-19 count in india.
+    Developed by NGO for updates about covid-19 count.
+  Visiters can see covid-19 updates of indian states, and we are also showing stats of covid-19 in last 15days.
+  <span style="background-color: rgb(241, 122, 122);">Note: Data of this web application is not official, please follow GOI website for exact data.</span>
+  </p>
+
+  </div>
+  <ion-row>  
+    <ion-col>
+ <ion-card>
+  <ion-toolbar color='secondary' style="font-size: 20px;text-align: center;">About Developer</ion-toolbar>
+  <ion-avatar>
+    <img src="assets/saiteja.jpg">
+  
+  </ion-avatar>
+ 
+  <p> My self Saiteja Govoor MEAN Stack Developer from Hyderabad,Native place is Kurnapally(Nizamabad).<br> 
+    Graduated from Mahaveer institute of science and technology hyd(JNTUH).<br>
+  I used Angular,Nodejs,Ionic,API,Scss,Html,Css,Javascript,Typescript to create this application.
+  </p>
+  <ion-toolbar color='tertiary' style="font-size: 20px;text-align: center;">
+  <ion-button target='_blank' href='https://www.linkedin.com/in/govoorsaiteja/'>See LinkedIn Profile</ion-button>
+  <ion-button style="text-transform:none!important;">Mail: saiteja2322@gmail.com</ion-button>
+
   </ion-toolbar>
-</ion-header>
-<ion-content>
-  <ion-list>
-    <ion-list-header>
-      <ion-label translate>Account</ion-label>
-    </ion-list-header>
-    <ion-item button>
-      <ion-icon name="contact" slot="start"></ion-icon>
-      <ion-label translate>Profile</ion-label>
-    </ion-item>
-    <ng-container *ngIf="isWeb">
-      <ion-list-header>
-        <ion-label translate>Preferences</ion-label>
-      </ion-list-header>
-      <ion-item button (click)="changeLanguage()">
-        <ion-icon name="md-globe" slot="start"></ion-icon>
-        <ion-label translate>Change language</ion-label>
-      </ion-item>
-    </ng-container>
-  </ion-list>
-</ion-content>
+
+ </ion-card>
+</ion-col>
+  </ion-row>
+</div>

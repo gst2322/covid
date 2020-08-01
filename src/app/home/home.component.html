@@ -1,9 +1,12 @@
-<div style="overflow: scroll;">
+<div style="overflow-y: scroll;">
  <div style="background-color: brown;color: white;">
    <h1 style="font-size: 28px;">India Covid Update Site</h1>
+   <ion-item>
+    <ion-input placeholder="Search by State Name" [(ngModel)]="term"></ion-input>
+  </ion-item>
  </div>
- <div style="margin-left: 2%;">
-   <ion-card class="state-card" *ngFor="let data of covidData">
+ <div style="    margin: 0;">
+   <ion-card class="state-card" *ngFor="let data of covidData | filter:term">
      <h2>{{data.state}} </h2>
      <p>Active cases : {{data.active | number}}</p>
      <table>
