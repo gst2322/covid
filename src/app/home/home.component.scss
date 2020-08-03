@@ -7,13 +7,18 @@ td {
   padding-left: 13px;
   padding-bottom: 10px;
   background-color: cornsilk;
-  width: 300px;
-  float: left;
+  // width: 300px;
+  // float: left;
   cursor: pointer;
-  font-family: 'Roboto';
-  margin-left: 10px;
-
+  font-family: "Roboto";
+  // margin-left: 10px;
+  margin: 20px;
 }
-table{
+table {
   font-size: 18px;
 }
+// @media only screen and (min-device-width: 320px) and (max-device-width: 520px) {
+//   .state-card{
+//     margin: auto;
+//   }
+// }

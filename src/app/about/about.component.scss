@@ -1,8 +1,9 @@
-
-canvas{
-    // width: 80% !important;
-    // height: 80% !important;
-    margin: auto;
-    background-color: white;
-    border: 5px solid royalblue;
+canvas {
+  // width: 80% !important;
+  // height: 80% !important;
+  margin: auto;
+  background-color: white;
+  height: max-content;
+  width: auto;
+  background-image: radial-gradient(circle 321px at 8.3% 75.7%, rgba(209, 247, 241, 1) 0%, rgba(249, 213, 213, 1) 81%);
 }

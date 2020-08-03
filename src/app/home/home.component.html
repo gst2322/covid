@@ -1,47 +1,45 @@
 <div style="overflow-y: scroll;">
- <div style="background-color: brown;color: white;">
-   <h1 style="font-size: 28px;">India Covid Update Site</h1>
-   <ion-item>
-    <ion-input placeholder="Search by State Name" [(ngModel)]="term"></ion-input>
-  </ion-item>
- </div>
- <div style="    margin: 0;">
-   <ion-card class="state-card" *ngFor="let data of covidData | filter:term">
-     <h2>{{data.state}} </h2>
-     <p>Active cases : {{data.active | number}}</p>
-     <table>
-       <tr>
-         <td>Parameter</td>
-         <td>Total</td>
-         <td>Last 24hrs</td>
-       </tr>
-       <tr>
-        <td>Cases</td>
-        <td>{{data.confirmed | number}}</td>
-        <td >
-          <p *ngIf='data.deltaconfirmed!=0'>{{data.deltaconfirmed | number}}</p>
-          <p *ngIf='data.deltaconfirmed==0'>Not updated</p>
+  <div style="background-color: brown;color: white;">
+    <h1 style="font-size: 28px;text-align: center;">India Covid Update Site</h1>
+    <ion-item>
+      <ion-input placeholder="Search by State Name" [(ngModel)]="term"></ion-input>
+    </ion-item>
+  </div>
+  <ion-row style="    margin: 0;">
+    <ion-col class="state-card" *ngFor="let data of covidData | filter: term">
+      <h2>{{ data.state }}</h2>
+      <p>Active cases : {{ data.active | number }}</p>
+      <table>
+        <tr>
+          <td>Parameter</td>
+          <td>Total</td>
+          <td>Last 24hrs</td>
+        </tr>
+        <tr>
+          <td>Cases</td>
+          <td>{{ data.confirmed | number }}</td>
+          <td>
+            <p *ngIf="data.deltaconfirmed != 0">{{ data.deltaconfirmed | number }}</p>
+            <p *ngIf="data.deltaconfirmed == 0">Not updated</p>
           </td>
-       </tr>
-       <tr>
-        <td>Recovered</td>
-        <td>{{data.recovered | number}}</td>
-        <td >
-          <p *ngIf='data.deltarecovered!=0'>{{data.deltarecovered | number}}</p>
-          <p *ngIf='data.deltarecovered==0'>Not updated</p>
+        </tr>
+        <tr>
+          <td>Recovered</td>
+          <td>{{ data.recovered | number }}</td>
+          <td>
+            <p *ngIf="data.deltarecovered != 0">{{ data.deltarecovered | number }}</p>
+            <p *ngIf="data.deltarecovered == 0">Not updated</p>
           </td>
-      </tr>
-      <tr>
-        <td>Deaths</td>
-        <td>{{data.deaths | number}}</td>
-        <td >
-          <p *ngIf='data.deltadeaths!=0'>{{data.deltadeaths | number}}</p>
-          <p *ngIf='data.deltadeaths==0'>Not updated</p>
+        </tr>
+        <tr>
+          <td>Deaths</td>
+          <td>{{ data.deaths | number }}</td>
+          <td>
+            <p *ngIf="data.deltadeaths != 0">{{ data.deltadeaths | number }}</p>
+            <p *ngIf="data.deltadeaths == 0">Not updated</p>
           </td>
-
-
-      </tr>
-     </table>
-   </ion-card>
- </div>
+        </tr>
+      </table>
+    </ion-col>
+  </ion-row>
 </div>

@@ -14,49 +14,58 @@ import { Label, Color } from 'ng2-charts';
 export class AboutComponent implements OnInit {
   covidData: any;
 
-  barChartOptions: ChartOptions = {
+  barChartOptions: any = {
     responsive: true,
+    maintainAspectRatio: false
+
   };
-  barChartLabels: Label[] = []
+  chartColors: any[] = [
+    { 
+      backgroundColor:'#ff4d4d' 
+    },
+    { 
+      backgroundColor:'#1aa3ff' 
+    }, 
+  ];
+  barChartLabels: Label[] = [];
   barChartType: ChartType = 'bar';
   barChartLegend = true;
   barChartPlugins: any = [];
   barChartData: ChartDataSets[] = [
-    { data: [], label: 'Confirmed cases' }, { data: [], label: 'Recovery' }
+    { data: [], label: 'Confirmed cases' },
+    { data: [], label: 'Recovery' }
     // ,{ data: [], label: 'Deaths' }
   ];
-   barChartColors: Color[] = [
-    { backgroundColor: 'red' },
-    { backgroundColor: 'green' }
-  ]
+  barChartColors: Color[] = [{ backgroundColor: 'red' }, { backgroundColor: 'green' }];
   version: string | null = environment.version;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   ngOnInit() {
+    
     this.http.get<any>('https://api.covid19india.org/data.json').subscribe(data => {
       this.covidData = data.cases_time_series;
       const ss1 = this.covidData.map((aaa: any) => {
-        const abc = aaa.date
+        const abc = aaa.date;
         return abc;
       });
-      this.barChartLabels = ss1.slice(-15, -1)
-      console.log(this.barChartLabels)
+      this.barChartLabels = ss1.slice(-15, -1);
+      console.log(this.barChartLabels);
       const ss2 = this.covidData.map((aaa: any) => {
         // tslint:disable-next-line: radix
-        const ddd = parseInt(aaa.dailyconfirmed)
+        const ddd = parseInt(aaa.dailyconfirmed);
         return ddd;
       });
-      this.barChartData[0].data = ss2.slice(-15, -1)
-      console.log(this.barChartData[0])
+      this.barChartData[0].data = ss2.slice(-15, -1);
+      console.log(this.barChartData[0]);
 
       const ss3 = this.covidData.map((aaa: any) => {
         // tslint:disable-next-line: radix
-        const ccc = parseInt(aaa.dailyrecovered)
+        const ccc = parseInt(aaa.dailyrecovered);
         return ccc;
       });
-      this.barChartData[1].data = ss3.slice(-15, -1)
-      console.log(this.barChartData[1])
+      this.barChartData[1].data = ss3.slice(-15, -1);
+      console.log(this.barChartData[1]);
 
       // const ss4 = this.covidData.map((aaa: any) => {
       //   // tslint:disable-next-line: radix
@@ -65,9 +74,7 @@ export class AboutComponent implements OnInit {
       // });
       // this.barChartData[2].data = ss4.slice(-15, -1)
       // console.log(this.barChartData[2])
-
-
-    })
+    });
   }
 }
 // dailydeceased

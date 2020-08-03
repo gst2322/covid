@@ -6,7 +6,7 @@ import { SettingsComponent } from '@app/settings/settings.component';
 import { Shell } from '@app/shell/shell.service';
 
 const routes: Routes = [
-  Shell.childRoutes([{ path: 'settings', component: SettingsComponent, data: { title: extract('Settings') } }])
+  Shell.childRoutes([{ path: 'about-dev', component: SettingsComponent, data: { title: extract('About') } }])
 ];
 
 @NgModule({

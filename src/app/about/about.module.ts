@@ -8,7 +8,7 @@ import { AboutComponent } from './about.component';
 import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
-  imports: [CommonModule, TranslateModule,ChartsModule, IonicModule, AboutRoutingModule],
+  imports: [CommonModule, TranslateModule, ChartsModule, IonicModule, AboutRoutingModule],
   entryComponents: [AboutComponent],
   declarations: [AboutComponent]
 })

@@ -1,22 +1,20 @@
-
-ion-card{
+ion-card {
   // height: 400px;
   // width: 310px;
-  background-color: #FEE140;
-  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+  background-color: #fee140;
+  background-image: linear-gradient(90deg, #fee140 0%, #fa709a 100%);
   // margin: auto;
-  ion-avatar{
+  ion-avatar {
     height: 150px;
     width: 150px;
     margin: auto;
-  
   }
-  p{
+  p {
     width: 90%;
     font-size: 18px;
     margin: auto;
     color: slateblue;
     margin-top: 15px;
-    font-weight: 700;
+    font-weight: 450;
   }
 }
