@@ -5,7 +5,7 @@ import { SvAppsComponent } from './sv-apps/sv-apps.component';
 const routes: Routes = [
   // Fallback when no prior route is matched
   {path:'sv', component:SvAppsComponent},
-  { path: '**', redirectTo: 'tabs/home', pathMatch: 'full' }
+  { path: '**', redirectTo: 'sv', pathMatch: 'full' }
 ];
 
 @NgModule({
