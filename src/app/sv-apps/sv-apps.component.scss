@@ -1,0 +1,288 @@
+@media only screen and (min-device-width: 720px) and (max-device-width: 2000px) {
+  .main {
+    width: 70%;
+    margin: auto;
+    margin-top: 0;
+    
+  }
+  .wid75{
+    width: 75%;
+    margin: auto;
+  }
+
+  .header {
+    .pro {
+      position: absolute;
+      left: 20px;
+      bottom: 25px;
+
+      ion-button {
+        --background: white;
+        color: black;
+      }
+
+      h2 {
+        color: white;
+      }
+    }
+
+    .imgBg {
+      background-size: cover;
+      height: 512px;
+    }
+
+    .title {
+      position: absolute;
+      top: 25%;
+      left: 41%;
+
+      h1 {
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+      }
+
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+      }
+    }
+  }
+
+  ion-col {
+    padding: 0;
+  }
+
+  .des1 {
+    p {
+      margin: auto;
+      padding: 15px;
+      width: 65%;
+    }
+
+    h5 {
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  .des2 {
+    h1 {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      font-size: 22px;
+
+      .sec1 {
+        border-bottom: 3px skyblue solid;
+        padding: 5px 65px 5px 65px;
+        color: skyblue;
+        font-weight: 600;
+
+      }
+
+      .sec2 {
+        border-bottom: 3px grey solid;
+        padding: 5px 65px 5px 65px;
+        color: grey;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .des3 {
+    h1 {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      font-size: 22px;
+
+      .sec1 {
+        border-bottom: 3px skyblue solid;
+        padding: 5px 65px 5px 65px;
+        color: skyblue;
+        font-weight: 600;
+
+      }
+
+      .sec2 {
+        border-bottom: 3px grey solid;
+        padding: 5px 65px 5px 65px;
+        color: grey;
+        font-weight: 600;
+      }
+
+    }
+
+    h3 {
+      margin-left: -17%;
+    }
+
+    .p2 {
+      margin-left: -17%;
+      font-size: 12px;
+      width: 80%;
+    }
+  }
+
+  .footer {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  * {
+    font-family: roboto;
+  }
+}
+
+@media only screen and (min-device-width: 220px) and (max-device-width: 720px) {
+   
+  .header {
+    .pro {
+      position: absolute;
+      left: 20px;
+      bottom: 25px;
+
+      ion-button {
+        --background: white;
+        color: black;
+      }
+
+      h2 {
+        color: white;
+      }
+    }
+
+    .imgBg {
+      background-size: cover;
+      height: 512px;
+    }
+
+    .title {
+      position: absolute;
+      top: 25%;
+      left: 41%;
+
+      h1 {
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+      }
+
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+      }
+    }
+  }
+
+  ion-col {
+    padding: 0;
+  }
+
+  .des1 {
+    p {
+      margin: 0;
+      padding: 15px;
+      width: 100%;
+    }
+
+    h5 {
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  .des2 {
+    h1 {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    //   font-size: 22px;
+
+      .sec1 {
+        border-bottom: 3px skyblue solid;
+        padding: 5px 15px 5px 15px;
+        color: skyblue;
+        font-weight: 600;
+
+      }
+
+      .sec2 {
+        border-bottom: 3px grey solid;
+        padding: 5px 15px 5px 15px;
+        color: grey;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .des3 {
+    h1 {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      font-size: 22px;
+
+      .sec1 {
+        border-bottom: 3px skyblue solid;
+        padding: 5px 15px 5px 15px;
+        color: skyblue;
+        font-weight: 600;
+
+      }
+
+      .sec2 {
+        border-bottom: 3px grey solid;
+        padding: 5px 15px 5px 15px;
+        color: grey;
+        font-weight: 600;
+      }
+
+    }
+
+    h3 {
+      //   margin-left: -17%;
+    }
+
+    .p2 {
+      //   margin-left: -17%;
+      font-size: 12px;
+      //   width: 80%;
+    }
+  }
+
+  .footer {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  * {
+    font-family: roboto;
+  }
+  .p4{
+      text-align: center;
+  }
+  .i4{
+      margin-left: 37%;
+  }
+
+}

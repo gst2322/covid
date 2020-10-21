@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="38px" viewBox="0 0 35 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.23202 4.40460169 0.23202 4.40460169 3.84402 0 3.84402"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Face-Mask-Landing" transform="translate(-700.000000, -2307.000000)">
+            <g id="Group" transform="translate(700.000000, 2308.000000)">
+                <g id="Group-10">
+                    <path d="M1.10846186,24.3558 C3.62875847,31.0179 10.0052839,35.7507 17.4780805,35.7507 C24.7233771,35.7507 30.93825,31.3017 33.6068517,24.9591" id="Stroke-1" stroke="#131415" stroke-width="0.75"></path>
+                    <polygon id="Fill-3" fill="#131415" points="34.9561907 27.78033 34.3923347 27.96753 33.482928 25.15593 30.7763602 26.27823 30.5515297 25.72263 33.8486483 24.35613"></polygon>
+                    <path d="M33.8479661,11.69472 C31.3276695,5.03262 24.9511441,0.29982 17.4783475,0.29982 C10.2327542,0.29982 4.01817797,4.74882 1.34927966,11.09142" id="Stroke-5" stroke="#131415" stroke-width="0.75"></path>
+                    <g id="Group-9" transform="translate(0.000000, 7.850700)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-8"></g>
+                        <polygon id="Fill-7" fill="#131415" mask="url(#mask-2)" points="-5.93220339e-05 0.41952 0.56409322 0.23202 1.47320339 3.04422 4.17977119 1.92162 4.40460169 2.47722 1.10777966 3.84402"></polygon>
+                    </g>
+                </g>
+                <g id="Group-14" transform="translate(8.000000, 7.500000)" stroke="#131415" stroke-linejoin="round" stroke-width="0.75">
+                    <g id="Group-5" transform="translate(0.423729, 0.256377)">
+                        <polygon id="Stroke-1" points="9.72209564 8.94887686 0.208427361 4.64487882 9.72209564 0.340880784 19.2357639 4.64487882"></polygon>
+                        <polyline id="Stroke-3" points="0.208427361 4.6446798 0.208427361 15.3989033 9.72209564 19.7029014 19.2357639 15.3989033 19.2357639 4.6446798"></polyline>
+                    </g>
+                    <path d="M10.1458245,10.6460365 L10.1458245,18.2374404" id="Stroke-6"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

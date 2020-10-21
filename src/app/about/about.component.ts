@@ -17,15 +17,14 @@ export class AboutComponent implements OnInit {
   barChartOptions: any = {
     responsive: true,
     maintainAspectRatio: false
-
   };
   chartColors: any[] = [
-    { 
-      backgroundColor:'#ff4d4d' 
+    {
+      backgroundColor: '#ff4d4d'
     },
-    { 
-      backgroundColor:'#1aa3ff' 
-    }, 
+    {
+      backgroundColor: '#1aa3ff'
+    }
   ];
   barChartLabels: Label[] = [];
   barChartType: ChartType = 'bar';
@@ -42,7 +41,6 @@ export class AboutComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    
     this.http.get<any>('https://api.covid19india.org/data.json').subscribe(data => {
       this.covidData = data.cases_time_series;
       const ss1 = this.covidData.map((aaa: any) => {

@@ -15,6 +15,7 @@ import { SettingsModule } from './settings/settings.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ChartsModule } from 'ng2-charts';
+import { SvAppsComponent } from './sv-apps/sv-apps.component';
 
 @NgModule({
   imports: [
@@ -32,7 +33,7 @@ import { ChartsModule } from 'ng2-charts';
     AboutModule,
     AppRoutingModule // must be imported as the last module as it contains the fallback route
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, SvAppsComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
